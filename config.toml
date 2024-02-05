@@ -1,0 +1,31 @@
+# Host configuration from template
+[user]
+username = "admin"
+password = "pfsense"
+
+[config]
+config_path = "/home/alban/Desktop/config_from_template/configs/template.xml"
+snort_template_path = "/home/alban/Desktop/config_from_template/configs/config_with_snort.xml"
+ssh_port = "8022"
+https_port = "8443"
+lan_address = "192.168.3.254"
+network = "192.168.3.0"
+domain = "toto"
+hostname = "tata"
+dhcp_range = "192.168.3.160-192.168.3.199"
+Allowed_hosts_range = "192.168.3.10-192.168.3.200"
+
+[certificate]
+description = "test-Vizyon"
+city = "Grenoble"
+country = "FR"
+organization = "Vizyon"
+organizationalunit = "Network"
+state = "Isere"
+type = "user"
+
+[vpn]
+tls_path = "/home/alban/Desktop/config_from_template/Cle_TLS"
+description = "VIZYON 200 CLOUD"
+server_addr = "15.236.148.128"
+server_port = "1194"
